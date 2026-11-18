@@ -36,3 +36,9 @@
 - **Process failure:** Protecting the original subject pixels was necessary but insufficient. I used a crude threshold/manual polygon matte, a generated generic background, and a relocated prop. The result had an obvious cutout edge, failed environmental integration, and did not convincingly connect the fist to the bag. This repeated the forbidden sticker-like approach despite the prior warning.
 - **Action:** Do not polish or reuse this draft. Future attempts require a genuinely high-quality reviewed matte, subject-aware layout and verified hand/bag contact before presentation. Do not generate/show a composite until it passes full-frame and 100% edge/contact QA. If the current tools cannot both preserve the original subject and achieve credible integration, disclose that limitation instead of presenting another poor draft as progress.
 - **Status:** Rejected; no Project 002 composite approved.
+
+## 2026-11-18 — preferred gym aesthetic and option-B selection
+
+- **User direction:** The environment must match the supplied gym photo's aesthetic. The user then selected option B from two in-chat variants.
+- **Style cues:** Dark, intimate industrial gym; aged brick/concrete and exposed timber/steel; warm pendant practicals with a soft rear window; natural background falloff and depth; no ring, signage, or extra people. The supplied photo is an environment/style reference only, not a source for the speedbag athlete.
+- **Action/status:** Saved option B as `PROJECTS/PROJECT_002/Working_Composites/boxing-speedbag-selected-option-B-draft-v3.png`. The selection means preferred direction only, not approval. Continue preserving the original subject and do not mark approved without explicit confirmation.

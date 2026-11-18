@@ -37,5 +37,9 @@ Keep the boxer outside the ring; no ring, unwanted person, or gym-name text. Mat
 ## Rejected immutable-subject attempt
 
 - `Working_Composites/boxing-speedbag-immutable-subject-draft-v2.png` — full-resolution 1707 × 2560 composite attempt, explicitly rejected by the user as “terrible.” Do not use it as a base, show it as acceptable, or polish it further. Although opaque subject pixels came from the original, the crude matte/edge, visual cutout, mismatched integration, and bag placement failed. This demonstrates that exact subject preservation alone does not make a composite successful.
-- `Working_Composites/speedbag-gym-background-v4.png` — person-free generated gym environment used behind the subject.
-- `Working_Composites/speedbag-background-candidate-v2.png` — generated environment/prop source used only for its speed bag and suspension detail; not a final plate.
+
+## Current user-selected draft
+
+- `Working_Composites/boxing-speedbag-selected-option-B-draft-v3.png` — full-resolution composite using the dim, timber/steel-beam industrial-gym aesthetic of the user's style reference. The user selected option B as preferred over option A; this is **not approval**. Keep the original boxer photo as the sole source for the subject and do not treat this draft as approved until the user explicitly says so.
+- The selected background direction uses aged brick/concrete, dark overhead structure, warm practical light, a rear window and subdued distant gym equipment. Use the supplied gym photo for environment mood only, never as a replacement athlete or fixed plate.
+- `Working_Composites/speedbag-background-candidate-v2.png` remains a generated prop source only, not a final plate.
