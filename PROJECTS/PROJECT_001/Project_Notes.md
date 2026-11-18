@@ -26,6 +26,10 @@ The environment reference is a wide view of an aged industrial gym with exposed 
 - `Working_Composites/wraps-campaign-draft.jpg` — first exploratory draft, created before the master workflow was available. It is not approved and remains unchanged.
 - `Working_Composites/wraps-campaign-draft-v2.png` — second draft made after reviewing the knowledge base. It uses the original athlete photograph as the subject layer, removes the painted gym name from the environment, keeps the subject outside the ring, and exports at the environment reference's native 1199 × 799 resolution (no background upscaling). The athlete layer is downscaled for placement; no subject regeneration or colour retouching was used. It remains unapproved. Matte edge, lighting match, relative scale and integration still require user review.
 
+## User-provided style reference
+
+`../../COMPOSITING_KNOWLEDGE/References/boxing-gym-editorial-user-benchmark.png` is a user-supplied image from another chat. The user said it is much better than the earlier outputs and wants future composites to match its style and quality. Use it as a visual target for portrait framing, natural integration, warm low-key industrial atmosphere, soft directional/window light and environmental depth—not as the source subject or a fixed environment plate. The user has approved the reference direction, not either Project 001 draft.
+
 ## Approval / next steps
 
-No approval or visual benchmark has been recorded. Wait for explicit review/corrections. Keep the original and environment references unchanged; save revisions as new versioned drafts and move a copy to `Approved_Composites/` only after explicit user approval.
+The user has not approved either Project 001 composite. Keep the original and environment references unchanged; save revisions as new versioned drafts and move a copy to `Approved_Composites/` only after explicit approval. Apply the new style benchmark to future revisions without sacrificing subject preservation or perspective compatibility.

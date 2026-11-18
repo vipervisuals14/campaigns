@@ -14,7 +14,7 @@ General, cross-project working principles. Keep shoot-specific observations in e
 
 ## Current baseline
 
-There are no user-approved composites or cross-project visual benchmarks recorded yet. Project 001 records the first available working material and its specific constraints; its draft is not an approved reference.
+There are no user-approved composites. The user has provided one cross-project quality/style benchmark, recorded in `APPROVED_REFERENCES.md` and preserved under `COMPOSITING_KNOWLEDGE/References/`; it is a style reference, not source imagery and not approval of a Project 001 draft. Project 001 records the first working materials and its specific constraints.
 
 ## Knowledge-base maintenance
 
