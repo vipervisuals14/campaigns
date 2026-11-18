@@ -16,3 +16,10 @@
 - The user later supplied `COMPOSITING_KNOWLEDGE/References/boxing-gym-editorial-user-benchmark.png` from another chat and said its style and quality should guide future work. It is recorded as a user-approved style benchmark, not as approval of either Project 001 draft or as a background/source-subject plate.
 - The user's comparative feedback identifies the wide v1/v2 compositions and visibly pasted integration as below target. Future work should prioritize compatible portrait framing, natural depth and stronger photographic integration while retaining the original subject.
 - Await explicit user approval or corrections before marking either composite as approved.
+
+## Project 002 — boxer striking a speed bag
+
+- The user supplied a new side-on full-body boxer photograph and a separate industrial-gym speed-bag reference. The second reference contains another person, so it is not used as a subject source.
+- A background-only environment plate was generated from the speed-bag and user-approved style references; the supplied boxer was extracted from the original photo and composited onto it with a speed bag aligned to his existing punch. The new draft is `PROJECTS/PROJECT_002/Working_Composites/boxing-speedbag-draft-v1.png` (848 × 1264). The background plate is retained and labeled `speedbag-environment-plate-v1.png`.
+- This is an unapproved draft; generated environment is a visual reconstruction, not a verified exact view of the same physical gym. The subject source remains the original photo and the subject is not in a ring.
+- Await user review before approval or treating this as a benchmark.
