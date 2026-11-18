@@ -34,8 +34,8 @@ Follow `../../TECHNIQUES/Compositing_Pipeline.md`. Scene-aware generation may ex
 
 Keep the boxer outside the ring; no ring, unwanted person, or gym-name text. Match the environment to the original light and camera geometry, with plausible bag suspension and shadows. Protect white socks/shoes and colorful details. Keep original files untouched; do not mark any new version approved without explicit user approval.
 
-## Current immutable-subject draft
+## Rejected immutable-subject attempt
 
-- `Working_Composites/boxing-speedbag-immutable-subject-draft-v2.png` — new full-resolution 1707 × 2560 working draft. The gym background is generated without a person; the speed bag prop is positioned to meet the source's existing frame-left punch. The subject RGB is sourced only from the original photograph, with no generative redraw, retouch, relighting, recoloring, crop, or rescaling. An opaque-pixel comparison confirms those pixels match the original. A manually reviewed foreground matte and antialiased boundary are used only to separate the white studio background. This is a draft for review, **not approved**; inspect the boundary and environmental integration carefully.
+- `Working_Composites/boxing-speedbag-immutable-subject-draft-v2.png` — full-resolution 1707 × 2560 composite attempt, explicitly rejected by the user as “terrible.” Do not use it as a base, show it as acceptable, or polish it further. Although opaque subject pixels came from the original, the crude matte/edge, visual cutout, mismatched integration, and bag placement failed. This demonstrates that exact subject preservation alone does not make a composite successful.
 - `Working_Composites/speedbag-gym-background-v4.png` — person-free generated gym environment used behind the subject.
 - `Working_Composites/speedbag-background-candidate-v2.png` — generated environment/prop source used only for its speed bag and suspension detail; not a final plate.
