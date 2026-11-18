@@ -1,0 +1,17 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*~
+
+# Working files (keep deliverables and sources tracked)
+*.psd
+*.kra
+*.afphoto
+*.clip
+*.xmp
+
+# Large intermediate renders that are not deliverables
+*_render_*.png
+*_preview_*.jpg
