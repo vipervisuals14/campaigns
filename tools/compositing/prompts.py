@@ -1,48 +1,51 @@
-"""Reusable prompts for scene-aware sports-photo compositing and targeted refinements.
+"""Prompt scaffolds for scene context with an immutable photographic subject.
 
-Use exact reference order: original subject first; environment/style second; optional
-prop interaction third. Fill analytical values from each source capture; never infer
-camera or light values from a different photo in the series.
+Prompts cannot guarantee pixel locking. Any generated athlete pixels are forbidden in
+final output; restore the foreground from the unchanged raw photo before presentation.
 """
 
-STAGE1_TEMPLATE = """Authentic, raw, full-frame on-location sports editorial photograph.
-Composite the exact athlete from image 1 into {environment_description}, guided by
-image 2 for materials, palette, atmosphere and optical style; use image 3 only as an
-optional prop/interaction reference. Narrative: {narrative_placement_and_constraints}.
+STAGE1_TEMPLATE = """Create a photorealistic {aspect_ratio} editorial sports scene/context for:
+{environment_description}. This is a background/layout integration task, not permission
+to alter or replace the photographed athlete in image 1.
 
-1. ORIGINAL SUBJECT AND CAMERA — IMAGE 1 IS SOURCE OF TRUTH
-- Preserve the exact {aspect_ratio} {framing_type}, camera height/tilt {camera_geometry},
-  horizon {horizon_description}, pose, motion vector {motion_vector}, face, expression,
-  hair, skin texture/pores, proportions, clothing, gear and existing brand marks.
-- No beauty filtering, skin smoothing, muscle enhancement, invented details, pose change
-  or identity drift. Reconstruct the environment to fit image 1; do not force its camera
-  into the reference photograph's view.
+IMMUTABLE SOURCE — IMAGE 1
+Image 1 is a read-only source of truth. Preserve the original camera geometry, framing,
+pose, action direction, scale, identity, face, expression, hair, skin texture/pores,
+anatomy, clothing, logos, colors, accessories, shoes, shadows, highlights, sharpness and
+every visible subject detail exactly. Do not regenerate, redraw, retouch, relight, recolor,
+reshape, sharpen, smooth, crop, scale, warp, or invent any pixels on the person. Do not
+change the original subject photo. If exact protection cannot be guaranteed, generate
+only a subject-free environment/layout reference and do not present it as a finished
+composite. Prompts are not pixel masks: verify output and restore original subject pixels
+from image 1 before any final candidate is shown.
 
-2. ENVIRONMENT AND PROP REFERENCES
-- {spatial_layout_and_prop_alignment}
-- Image 2 guides architectural materials, colour, atmosphere, depth-of-field and light
-  character only; do not copy its exact perspective/horizon where incompatible. Image 3
-  guides the optional prop's shape/placement only; remove third-party brand marks if asked.
-- Keep the subject and action at the correct place: {action_location_constraint}.
+REFERENCE USE
+Image 2 guides environment materials, palette, atmosphere and optical style only. Image 3
+is an optional prop reference only. Do not copy another person's identity, pose, body or
+clothing. The environment must fit image 1's {camera_geometry}, {horizon_description},
+{motion_vector} and {framing_type}; do not force a reference photograph's perspective.
 
-3. PHOTOGRAPHIC INTEGRATION
-- Match a single motivated key: {key_light_direction_quality_and_color_temp}, with
-  corresponding room falloff from {lit_side} to {shadow_side}. Suppress conflicting
-  secondary colour temperatures. Ground plane, scale, prop orientation, floor contact,
-  cast shadows, reflections and depth of field must agree with image 1.
-- Remove the cyclorama, including trapped white pockets and bright rims, without
-  reshaping the subject. Protect intentional white socks/shoes and colourful detail.
-- Optical rendering: subject/interaction {focus_plane}; background {depth_of_field}.
-  Natural sensor texture, realistic highlights and shadows; no synthetic HDR or
-  oversharpening.
+SCENE REQUIREMENTS
+Narrative and placement: {narrative_placement_and_constraints}.
+Spatial layout and prop alignment: {spatial_layout_and_prop_alignment}.
+Action location restriction: {action_location_constraint}.
+Motivated environment light matching the unmodified source: {key_light_direction_quality_and_color_temp};
+room falloff from {lit_side} to {shadow_side}. Keep subject and interaction in focus:
+{focus_plane}; environment depth of field: {depth_of_field}. Build physically plausible
+floor plane, room geometry, prop suspension, cast shadows and ambient falloff around the
+source camera. No unrelated people, rings, signage, readable text or unwanted props.
 
-STRICTLY NO {forbidden_elements}."""
+STRICTLY NO {forbidden_elements}. Output may be used only as a scene/layout candidate
+until the original subject pixels have been restored and checked against image 1."""
 
-STAGE2_TEMPLATE = """Modify only this single target: {single_target_change}.
-Use image 1 as the current selected composite and image 2 as the original raw subject
-photo. Lock the composition, camera view, subject pose/height, face, identity, skin pores,
-clothing, gear, prop geometry and existing grain unless explicitly named in the target.
-Do not regenerate or soften the original subject. Keep all other elements unchanged.
+STAGE2_TEMPLATE = """Change only this environmental target: {single_target_change}.
+Image 1 is the current scene/context; image 2 is the immutable original subject photograph.
+Do not alter any subject pixel: no regeneration, repainting, retouching, relighting,
+recoloring, reshaping, rescaling, warping, cropping, sharpening, smoothing or logo/wardrobe
+changes. Keep all subject attributes, colors, original lighting and source camera geometry
+unchanged. If the model cannot guarantee subject preservation, treat its returned person
+pixels as invalid and use only the environment result; restore the subject from image 2
+before presenting a candidate. Never show a generated, altered subject as the final.
 """
 
 
@@ -52,7 +55,7 @@ def build_stage1_prompt(**values: str) -> str:
 
 
 def build_stage2_prompt(single_target_change: str) -> str:
-    """Build a one-objective refinement prompt; never combine unrelated fixes."""
+    """Build a one-objective environmental refinement prompt."""
     if not single_target_change or not single_target_change.strip():
         raise ValueError("single_target_change must be a specific, non-empty instruction")
     return STAGE2_TEMPLATE.format(single_target_change=single_target_change.strip())

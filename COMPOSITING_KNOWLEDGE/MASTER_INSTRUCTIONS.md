@@ -194,11 +194,11 @@ Never use a previously degraded AI-generated image as the starting point for ano
 
 Prioritize non-destructive workflows and preserve the original files.
 
-### Scene-aware integration takes precedence over cutout-and-paste
+### Immutable subject-source rule — non-negotiable
 
-A foreground matte pasted onto a generated empty plate is not, by itself, an acceptable finished composite. It can retain studio Fresnel rims, overbright white footwear, incompatible light, missing contact/bounce light, and mismatched prop/ground geometry. Use the source subject and environment references together in a scene-aware integration step first; use deterministic mattes and OpenCV only for local, inspectable post-processing. Do not treat a rejected cutout composite as a base or quality benchmark.
+The user's original subject photograph must never be changed. It is the sole source of the athlete. No generative output may replace, redraw, retouch, relight, recolor, reshape, resize, crop, warp, sharpen, smooth, or invent subject pixels. The original file stays byte-for-byte unchanged; use its pixels for the final foreground. A prompt does not lock pixels. In this workspace the image tool has no reliable protected-region mask, so generated subject pixels are not eligible for final output. Use generated results only as environment/layout references, then restore the original subject from the raw source and verify it before showing candidates. If that cannot be done cleanly, stop and explain the limitation rather than altering the subject.
 
-Follow the three stages in `TECHNIQUES/Compositing_Pipeline.md`: (1) scene-aware multi-reference candidate generation, two distinct options for A/B; (2) one-objective refinements with both current best and original raw source supplied each time; (3) deterministic local cleanup and pixel QA. Image order is original subject first, environment/style second, optional prop third. Exact model/provider attribution must not be guessed when Arena abstracts it. Preserve identity, pose, source camera geometry, pores, clothes, logos and bright accessories; keep originals untouched. Human-review all relighting, masking and cleanup.
+The previous plain cutout-over-empty-plate draft was rejected for poor integration; that does not authorize AI to alter the person. Build the environment around the immutable source and prioritize subject preservation. Follow `TECHNIQUES/Compositing_Pipeline.md` for context generation, original-pixel restoration, matte limits and QA. Do not show A/B candidates until source subject pixels have been restored and verified. Keep the raw camera geometry and subject lighting; adapt the environment, not the athlete. Exact model/provider attribution must not be guessed when Arena abstracts it.
 
 ## 07. LIGHTING AND REALISM
 
