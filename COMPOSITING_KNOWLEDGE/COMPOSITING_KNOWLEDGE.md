@@ -85,7 +85,21 @@ Two photos from the same shoot are **never** assumed to share perspective. Verif
 
 ---
 
-## 7. Lessons Learned
+## 7. Confirmed Working Rules (2026-11-18)
+
+Binding additions confirmed by the client. Full text in `MASTER_INSTRUCTIONS.md` §13.
+
+1. **Approval system** — Only images explicitly labelled APPROVED become permanent references. Labels: APPROVED / NOT APPROVED / CORRECTION REQUIRED.
+2. **Image quality** — Always use original full-resolution photographs; never compressed previews or degraded generations.
+3. **Project organization** — One folder per photoshoot; never mix information between campaigns.
+4. **Learning** — Document both the correction and the underlying technical lesson; apply lessons forward.
+5. **Reference management** — Document exactly what each approved image establishes (perspective, lighting, environment, colour, texture, visual direction).
+6. **Session startup** — Review the knowledge base and summarize relevant lessons before starting work.
+7. **Session end** — Update GitHub with all corrections, approvals and learnings; confirm successful commits.
+
+---
+
+## 8. Lessons Learned
 
 > This section is appended over time. Each entry should reference a `CORRECTIONS_LOG.md` ID.
 

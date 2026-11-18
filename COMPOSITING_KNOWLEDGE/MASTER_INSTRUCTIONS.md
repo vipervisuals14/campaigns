@@ -358,3 +358,50 @@ This is about developing a sophisticated, repeatable photographic compositing wo
 5. Lighting and texture consistency.
 6. Maximum image quality.
 7. Workflow efficiency.
+
+---
+
+## 13. WORKING RULES — CONFIRMED ADDITIONS
+
+These rules were confirmed by the client on 2026-11-18 and are binding on all work.
+
+### 13.1 Approval System
+
+The client explicitly labels every image as **APPROVED**, **NOT APPROVED**, or **CORRECTION REQUIRED**.
+
+- Only images explicitly marked **APPROVED** may become permanent visual references.
+- An image is never treated as approved by implication or silence.
+- Approved images are stored in `PROJECTS/PROJECT_XXX/Approved_Composites/` and registered in `APPROVED_REFERENCES.md`.
+- NOT APPROVED and CORRECTION REQUIRED outcomes are logged with their root cause.
+
+### 13.2 Image Quality
+
+- Always prioritize **original full-resolution photographs**.
+- Never use compressed previews or previously degraded generations as the source for subsequent composites.
+- Return to the original capture for every new composite.
+
+### 13.3 Project Organization
+
+- Keep each photoshoot organized separately.
+- Maintain its original photographs, environmental references, approved composites and project notes **without mixing information between campaigns**.
+- One `PROJECT_XXX/` folder per campaign; never cross-reference material between campaigns unless a permanent preference is explicitly established.
+
+### 13.4 Learning
+
+- When the client corrects something, document **both the correction and the underlying technical lesson**.
+- Apply relevant lessons to future projects.
+- Record in `CORRECTIONS_LOG.md` and update the relevant `TECHNIQUES/` reference.
+
+### 13.5 Reference Management
+
+- When an approved image is stored, document exactly what it establishes: **perspective, lighting, environment, colour, texture or overall visual direction**.
+- Classify each as a permanent preference or a project-specific decision.
+
+### 13.6 Session Startup
+
+- At the beginning of every new conversation, review the existing knowledge base and **summarize the relevant lessons** before beginning work.
+
+### 13.7 Session End
+
+- Before finishing a project, update GitHub with all relevant corrections, approvals and technical learnings.
+- **Confirm successful commits.**
