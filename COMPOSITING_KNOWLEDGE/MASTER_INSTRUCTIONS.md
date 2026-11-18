@@ -194,6 +194,12 @@ Never use a previously degraded AI-generated image as the starting point for ano
 
 Prioritize non-destructive workflows and preserve the original files.
 
+### Scene-aware integration takes precedence over cutout-and-paste
+
+A foreground matte pasted onto a generated empty plate is not, by itself, an acceptable finished composite. It can retain studio Fresnel rims, overbright white footwear, incompatible light, missing contact/bounce light, and mismatched prop/ground geometry. Use the source subject and environment references together in a scene-aware integration step first; use deterministic mattes and OpenCV only for local, inspectable post-processing. Do not treat a rejected cutout composite as a base or quality benchmark.
+
+Follow the three stages in `TECHNIQUES/Compositing_Pipeline.md`: (1) scene-aware multi-reference candidate generation, two distinct options for A/B; (2) one-objective refinements with both current best and original raw source supplied each time; (3) deterministic local cleanup and pixel QA. Image order is original subject first, environment/style second, optional prop third. Exact model/provider attribution must not be guessed when Arena abstracts it. Preserve identity, pose, source camera geometry, pores, clothes, logos and bright accessories; keep originals untouched. Human-review all relighting, masking and cleanup.
+
 ## 07. LIGHTING AND REALISM
 
 A convincing composite requires more than matching colours.

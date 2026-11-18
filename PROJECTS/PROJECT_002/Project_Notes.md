@@ -2,7 +2,7 @@
 
 ## Status
 
-Working draft created; not user-approved. Treat it as a draft, not an approved reference.
+**Rejected by the user as “really bad.”** `Working_Composites/boxing-speedbag-draft-v1.png` is not approved and must not be used as a quality reference, style benchmark, or base for polishing. The earlier cutout-over-empty-plate method is retired as the main composition approach. No Project 002 composite is approved.
 
 ## Inputs
 
@@ -22,11 +22,13 @@ Working draft created; not user-approved. Treat it as a draft, not an approved r
 
 The source is a 1707 × 2560 portrait with a strong side-on stance and fist extended toward frame-left. The environment reference is a 1080 × 1340 portrait with an industrial beam, concrete/brick walls and a suspended teardrop speed bag; the reference also contains another boxer that must not become a second foreground subject. The source's punch direction can naturally meet the speed bag. The source has bright studio lighting; the environment is warmer, dimmer and directional, so match integration conservatively without retouching the source subject.
 
-## Working composite
+## Existing rejected working files
 
-- `Working_Composites/boxing-speedbag-draft-v1.png` — portrait composite (848 × 1264). The boxer is cut from the supplied original photo and scaled down without pose or colour retouching; a background-only environment plate is generated from the speed-bag scene and the user's quality benchmark. The generated plate contains no people; the user's boxer is the only foreground athlete. The reference bag is aligned with the existing punch. No ring or gym name appears.
-- `Working_Composites/speedbag-environment-plate-v1.png` — generated environment-only working plate, not a source photo. It reconstructs an industrial gym corner from the supplied speed-bag reference and global style benchmark. Since the reference photo contained a different boxer, this avoids retaining that person. This reconstruction is not evidence of the exact physical layout of another real area of the gym.
+- `Working_Composites/boxing-speedbag-draft-v1.png` — 848 × 1264 cutout-and-paste draft; explicitly rejected by the user as “really bad.” Retained as historical work only. Do not reuse, polish, approve, or cite it as a quality reference.
+- `Working_Composites/speedbag-environment-plate-v1.png` — generated environment-only plate, not a source photograph or approved background. Retained for history only; it is not a standalone compositing method.
 
-## Plan / quality checks
+## Revised workflow before any new composite
 
-Check bag/fist contact, shoe-to-floor alignment, matte edges, perspective and lighting against the user's benchmark. The subject's original bright studio lighting differs from the warm environment; do not retouch the source person to hide that mismatch. The output is a draft for user review. Do not overwrite originals, Project 001 drafts or the style benchmark; create new versions for revisions.
+Use the scene-aware three-stage workflow in `../../TECHNIQUES/Compositing_Pipeline.md`. For a new Stage 1 attempt, submit the original subject photo first, the speed-bag/gym reference second, and an optional prop reference third. Generate two distinct scene-aware candidates in parallel for A/B selection; do not use the rejected draft or the empty plate as the base. Any targeted Stage 2 refinement must include both the current candidate and the original raw subject image, and change one objective only. Stage 3 uses the deterministic, inspectable OpenCV helpers under `../../tools/compositing/` for local edge cleanup and QA.
+
+Preserve the exact original subject, pose, identity, skin texture, clothing, logos and camera geometry. Keep the boxer outside the ring; no ring, unwanted person or gym-name text. Match one motivated light, environmental falloff, plausible bag interaction, contact/cast shadows, depth of field and grain. Protect white socks/shoes and colorful detail. Keep original files untouched and do not mark any new version approved without explicit user approval.

@@ -6,7 +6,7 @@ General, cross-project working principles. Keep shoot-specific observations in e
 
 - Inspect the current branch, repository tree, knowledge files, project notes and approved references before starting a new shoot.
 - Preserve source photographs. Work non-destructively, keep originals byte-for-byte, and produce composites as separate working files.
-- The subject should remain the original photographed person. Use a careful matte and compositing workflow; do not synthesize or reinterpret the subject.
+- The subject should remain the exact original photographed person. Prefer scene-aware integration with ordered multi-reference inputs (raw subject, environment/style, optional prop); do not use a raw cutout pasted onto an empty generated plate as the main/finished method. See `TECHNIQUES/Compositing_Pipeline.md`.
 - Analyze each capture independently. A shared shoot does not imply a shared camera position, lens, horizon or background plate.
 - Treat unreviewed output as a draft. Never list a draft as approved until the user explicitly approves it.
 - Ask specific questions when a missing reference or technical ambiguity could compromise realism.

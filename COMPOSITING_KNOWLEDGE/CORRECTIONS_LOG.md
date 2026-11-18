@@ -15,3 +15,11 @@
 - **Underlying issue in v1/v2:** They were wide composites on the reference plate, the subject read as a cutout/paste, and the treatment did not reach the benchmark's portrait framing and environmental depth. Do not defend or reuse those drafts as style references.
 - **Action:** Preserve the supplied benchmark unchanged; use it for style/quality only. For future work, return to the original subject photograph, choose/reconstruct an environment compatible with its camera view, match portrait framing and depth where suitable, and prioritize believable integration. Never use the benchmark as a replacement subject or fixed background plate.
 - **Status:** User-confirmed style benchmark. This feedback does not approve the existing Project 001 drafts.
+
+## 2026-11-18 — Project 002 cutout-and-paste draft rejection and pipeline correction
+
+- **User correction:** The user explicitly rejected `PROJECTS/PROJECT_002/Working_Composites/boxing-speedbag-draft-v1.png` as “really bad.” It is not approved and must not be reused as a quality reference or polished further as the primary approach.
+- **Underlying issue:** A hand-cut subject pasted onto an empty generated plate does not produce scene-aware integration. Studio rim spill, footwear brightness, lighting mismatch, missing environmental bounce/contact, and pose/prop/ground geometry remain apparent. Earlier threshold/GrabCut/polygon experiments were also artifact-prone.
+- **Action:** Adopt the three-stage hybrid documented in `TECHNIQUES/Compositing_Pipeline.md`: scene-aware multi-reference generation (original subject first, environment/style second, optional prop third) with two distinct candidates in parallel; single-objective edits that re-include the original raw subject; then deterministic OpenCV/matting cleanup and native-pixel QA. Protect white footwear, socks, logos and colourful details.
+- **Provider caveat:** The handoff recommends possible OpenAI, Gemini and Black Forest Labs editing families but does not establish which proprietary Arena models were used. Do not guess model IDs or attribute any past result to a vendor without exposed metadata.
+- **Status:** Workflow/tooling guidance recorded. No new composite generated or approved; original Project 002 files remain unchanged.
