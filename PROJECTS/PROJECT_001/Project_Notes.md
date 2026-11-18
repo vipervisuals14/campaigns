@@ -21,9 +21,10 @@ Working draft only; not user-approved. Do not list as an approved composite or u
 
 The environment reference is a wide view of an aged industrial gym with exposed structure, plaster, brick, lockers, hanging heavy bags and a concrete floor. The subject reference is a tall portrait on a bright studio background. Their viewpoints, lighting and scale differ and require deliberate integration. Detailed camera/lens measurements and a fully perspective-matched reconstruction have not been confirmed; avoid claiming otherwise.
 
-## Existing working file
+## Working files
 
-- `Working_Composites/wraps-campaign-draft.jpg` — draft transferred from the earlier exploratory output. It uses a matte from the source athlete photo, scales and places that layer in the environment, and removes the wall gym name. It is not approved. Recheck the matte edge, lighting, scale, floor contact, full-resolution quality and all visible text before any revision or delivery as final.
+- `Working_Composites/wraps-campaign-draft.jpg` — first exploratory draft, created before the master workflow was available. It is not approved and remains unchanged.
+- `Working_Composites/wraps-campaign-draft-v2.png` — second draft made after reviewing the knowledge base. It uses the original athlete photograph as the subject layer, removes the painted gym name from the environment, keeps the subject outside the ring, and exports at the environment reference's native 1199 × 799 resolution (no background upscaling). The athlete layer is downscaled for placement; no subject regeneration or colour retouching was used. It remains unapproved. Matte edge, lighting match, relative scale and integration still require user review.
 
 ## Approval / next steps
 
